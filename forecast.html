@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Weather Web Application</title>
+
+		<link rel="stylesheet" href="style.css">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="hero" data-bg-image="images/banner.jpg">
+		<div class="site-content">
+			<div class="site-header">
+				<div class="container">
+					<a href="index.html" class="branding">
+						<img src="images/logo.png" alt="" class="logo">
+						<div class="logo-type">
+							<h1 class="site-title">WeatherApplication</h1>
+						</div>
+					</a>
+
+				
+					<div class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item current-menu-item"><a href="forecast.html">Forecast</a></li>
+							<li class="menu-item">
+								<!-- <div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+								</div>  -->
+							</li>
+						</ul> 
+					</div> 
+
+					<div class="mobile-navigation"></div>
+
+				</div>
+			</div> 
+
+			
+				<div class="container form-container">
+					<form action="#" class="find-location">
+						<!-- <input type="text" placeholder="Search your location, city..."> -->
+						<input type="text" name="city" id="city" placeholder="Search city" class="form-control" />
+						<input type="button" class="button" value="Search" id="submitForecast">
+					</form>
+					<ul class="list-group" id="result"></ul>
+				</div>
+			</div>
+			<div class="forecast-table">
+				<div class="container">
+					<div class="forecast-container">
+						<div class="today today-0 forecast">
+							<div class="forecast-header">
+								<div class="day">Monday</div>
+								<div class="date">6 Oct</div>
+							</div> 
+							<div id="block_container">
+								<div class="forecast-content">
+									<div class="sky-type">Clear Sky</div>
+									<div class="location">Delhi, IN</div>
+									<div class="degree">
+										<div class="num">23<sup>o</sup>C</div>
+									</div>
+								</div>
+								<div class="forecast-content">
+									<p>FEELS LIKE: <span class="feels_like">323</span><p> 
+									<p>HUMIDITY: <span class="humidity">323</span><p> 
+									<p>WIND: <span class="wind">323</span><p> 
+									<p>PRESSURE: <span class="pressure">323</span><p> 
+									<p>MAXIMUM TEMP: <span class="max_temp">323</span><p> 
+									<p>MINIMUM TEMP: <span class="min_temp">323</span><p> 
+								</div>
+							</div>
+						</div>
+						<div class="today today-1 forecast">
+							<div class="forecast-header">
+								<div class="day">Monday</div>
+								<div class="date">2021/1/7</div>
+							</div>
+							<div id="block_container">
+								<div class="forecast-content">
+									<div class="sky-type">sky is clear</div>
+									<div class="location">Delhi, IN</div>
+									<div class="degree">
+										<div class="num">19.94<sup>o</sup>C</div>
+									</div>
+								</div>
+								<div class="forecast-content">
+									<p>FEELS LIKE: <span class="feels_like">17.96</span></p><p> 
+									</p><p>HUMIDITY: <span class="humidity">46</span></p><p> 
+									</p><p>WIND: <span class="wind">2.16</span></p><p> 
+									</p><p>PRESSURE: <span class="pressure">1016</span></p><p> 
+									</p><p>MAXIMUM TEMP: <span class="max_temp">22.54</span></p><p> 
+									</p><p>MINIMUM TEMP: <span class="min_temp">14.77</span></p><p> 
+								</p></div>
+							</div>
+						</div>
+						<div class="today today-2 forecast">
+							<div class="forecast-header">
+								<div class="day">Monday</div>
+								<div class="date">2021/1/7</div>
+							</div>
+							<div id="block_container">
+								<div class="forecast-content">
+									<div class="sky-type">sky is clear</div>
+									<div class="location">Delhi, IN</div>
+									<div class="degree">
+										<div class="num">19.94<sup>o</sup>C</div>
+									</div>
+								</div>
+								<div class="forecast-content">
+									<p>FEELS LIKE: <span class="feels_like">17.96</span></p><p> 
+									</p><p>HUMIDITY: <span class="humidity">46</span></p><p> 
+									</p><p>WIND: <span class="wind">2.16</span></p><p> 
+									</p><p>PRESSURE: <span class="pressure">1016</span></p><p> 
+									</p><p>MAXIMUM TEMP: <span class="max_temp">22.54</span></p><p> 
+									</p><p>MINIMUM TEMP: <span class="min_temp">14.77</span></p><p> 
+								</p></div>
+							</div>
+						</div>
+					</div>
+					<div class="forecast-container">
+						<div class="today today-3 forecast">
+							<div class="forecast-header">
+								<div class="day">Monday</div>
+								<div class="date">6 Oct</div>
+							</div>
+							<div id="block_container">
+								<div class="forecast-content">
+									<div class="sky-type">Clear Sky</div>
+									<div class="location">Delhi, IN</div>
+									<div class="degree">
+										<div class="num">23<sup>o</sup>C</div>
+									</div>
+								</div>
+								<div class="forecast-content">
+									<p>FEELS LIKE: <span class="feels_like">323</span><p> 
+									<p>HUMIDITY: <span class="humidity">323</span><p> 
+									<p>WIND: <span class="wind">323</span><p> 
+									<p>PRESSURE: <span class="pressure">323</span><p> 
+									<p>MAXIMUM TEMP: <span class="max_temp">323</span><p> 
+									<p>MINIMUM TEMP: <span class="min_temp">323</span><p> 
+								</div>
+							</div>
+						</div>
+						<div class="today today-4 forecast">
+							<div class="forecast-header">
+								<div class="day">Monday</div>
+								<div class="date">2021/1/7</div>
+							</div>
+							<div id="block_container">
+								<div class="forecast-content">
+									<div class="sky-type">sky is clear</div>
+									<div class="location">Delhi, IN</div>
+									<div class="degree">
+										<div class="num">19.94<sup>o</sup>C</div>
+									</div>
+								</div>
+								<div class="forecast-content">
+									<p>FEELS LIKE: <span class="feels_like">17.96</span></p><p> 
+									</p><p>HUMIDITY: <span class="humidity">46</span></p><p> 
+									</p><p>WIND: <span class="wind">2.16</span></p><p> 
+									</p><p>PRESSURE: <span class="pressure">1016</span></p><p> 
+									</p><p>MAXIMUM TEMP: <span class="max_temp">22.54</span></p><p> 
+									</p><p>MINIMUM TEMP: <span class="min_temp">14.77</span></p><p> 
+								</p></div>
+							</div>
+						</div>
+						<div class="today today-5 forecast">
+							<div class="forecast-header">
+								<div class="day">Monday</div>
+								<div class="date">2021/1/7</div>
+							</div>
+							<div id="block_container">
+								<div class="forecast-content">
+									<div class="sky-type">sky is clear</div>
+									<div class="location">Delhi, IN</div>
+									<div class="degree">
+										<div class="num">19.94<sup>o</sup>C</div>
+									</div>
+								</div>
+								<div class="forecast-content">
+									<p>FEELS LIKE: <span class="feels_like">17.96</span></p><p> 
+									</p><p>HUMIDITY: <span class="humidity">46</span></p><p> 
+									</p><p>WIND: <span class="wind">2.16</span></p><p> 
+									</p><p>PRESSURE: <span class="pressure">1016</span></p><p> 
+									</p><p>MAXIMUM TEMP: <span class="max_temp">22.54</span></p><p> 
+									</p><p>MINIMUM TEMP: <span class="min_temp">14.77</span></p><p> 
+								</p></div>
+							</div>
+						</div>
+					</div>
+					<div class="forecast-container">
+						<div class="today today-6 forecast">
+							<div class="forecast-header">
+								<div class="day">Monday</div>
+								<div class="date">6 Oct</div>
+							</div>
+							<div id="block_container">
+								<div class="forecast-content">
+									<div class="sky-type">Clear Sky</div>
+									<div class="location">Delhi, IN</div>
+									<div class="degree">
+										<div class="num">23<sup>o</sup>C</div>
+									</div>
+								</div>
+								<div class="forecast-content">
+									<p>FEELS LIKE: <span class="feels_like">323</span><p> 
+									<p>HUMIDITY: <span class="humidity">323</span><p> 
+									<p>WIND: <span class="wind">323</span><p> 
+									<p>PRESSURE: <span class="pressure">323</span><p> 
+									<p>MAXIMUM TEMP: <span class="max_temp">323</span><p> 
+									<p>MINIMUM TEMP: <span class="min_temp">323</span><p> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="site-footer">
+				<div class="container">
+					<div class="row">
+					</div>
+					<br>
+					<p class="colophon">&#169 Made By Paras Garg_101883023.</p>
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+		<script src="forecast.js"></script>
+	</body>
+</html>
